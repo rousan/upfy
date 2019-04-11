@@ -4,7 +4,7 @@ grey='\033[0;37m'
 green='\033[0;32m'
 nc='\033[0m'
 
-scripts_url=https://github.com/rousan/upfy/raw/master/dist/scripts.zip
+scripts_url=https://raw.githubusercontent.com/rousan/upfy/master/dist/scripts.zip
 app_folder=$(eval echo ~$USER)/.upfy
 bashrc_file=$(eval echo ~$USER)/.bashrc
 
