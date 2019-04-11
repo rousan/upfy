@@ -6,7 +6,7 @@
   </a>
 </h1>
 <p align="center">Upfy</p>
-<p align="center"><code>curl -s https://raw.githubusercontent.com/rousan/upfy/master/up.sh  | bash</code></p>
+<p align="center"><code>curl -s https://raw.githubusercontent.com/rousan/upfy/master/up.sh  | bash && source ~/.bashrc</code></p>
 <br>
 
 # Upfy
@@ -21,9 +21,7 @@ or aliases to that fresh system. So, I ended up developing this script as such o
 Run the following command to up any unix-like system with useful aliases and commands:
 
 ```bash
-$ curl -s https://raw.githubusercontent.com/rousan/upfy/master/up.sh  | bash
-
-$ source ~/.bashrc
+$ curl -s https://raw.githubusercontent.com/rousan/upfy/master/up.sh  | bash && source ~/.bashrc
 ```
 
 Note: Please find the scripts folder to know more about commands and aliases being added.
