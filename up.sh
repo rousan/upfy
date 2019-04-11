@@ -49,8 +49,9 @@ main_script_file=$app_folder/scripts/main.sh
 execute_line=$(echo "[ -f $main_script_file ] && source $main_script_file")
 if ! grep -Fxq "$execute_line" "$bashrc_file"
 then
-  echo "\n# added by Upfy" >> "$bashrc_file"
-  echo "$execute_line" >> "$bashrc_file"
+  printf "\n" >> "$bashrc_file"
+  printf "# added by Upfy\n" >> "$bashrc_file"
+  printf "$execute_line" >> "$bashrc_file"
 fi
 
 printf "\n"
