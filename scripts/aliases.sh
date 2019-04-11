@@ -1,6 +1,63 @@
 #!/usr/bin/env bash
 
-alias c="clear"
-alias gs="git status"
-alias gb="git branch -a"
-alias gbc="git branch"
+# CWD
+alias -='cd -'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias 1='cd -'
+alias 2='cd -2'
+alias 3='cd -3'
+alias 4='cd -4'
+alias 5='cd -5'
+alias 6='cd -6'
+alias 7='cd -7'
+alias 8='cd -8'
+alias 9='cd -9'
+
+# Git
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gaa='git add --all'
+alias gb='git branch -a'
+alias gba='git branch -a'
+alias gbc='git branch | grep \* | cut -d '\'' '\'' -f2'
+alias gbd='git branch -d'
+alias gcb='git checkout -b'
+alias gcd='git checkout develop'
+alias gcf='git config --list'
+alias gcm='git checkout master'
+alias gco='git checkout'
+alias gcon='git config -l'
+alias gcs='git commit -S'
+alias gcsm='git commit -s -m'
+alias gd='git diff'
+alias gdw='git diff --word-diff'
+alias gemail='git config user.email '
+alias gf='git fetch'
+alias gfa='git fetch --all --prune'
+alias gl='git pull'
+alias glg='git log --stat'
+alias glgg='git log --graph'
+alias glgga='git log --graph --decorate --all'
+alias glgm='git log --graph --max-count=10'
+alias glgp='git log --stat -p'
+alias glo='git log --oneline --decorate'
+alias gname='git config user.name '
+alias gr='git remote -v'
+alias gra='git remote add'
+
+# File System
+alias l='ls -a'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias ls='ls -a'
+alias lsa='ls -lah'
+alias md='mkdir -p'
+
+# Misc Utility
+alias c='clear'
+alias calc='node -p'
