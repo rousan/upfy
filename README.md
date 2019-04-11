@@ -10,14 +10,24 @@ Upfy
 </h3>
 <br>
 
-# upfy
+# Upfy
 
-A bash script to populate a fresh unix system with repeated commands and aliases.
+Whenever I create a computing engine/container (e.g. Docker, AWS, GCP), I needed to copy some repeated commands
+or aliases to that fresh system. So, I ended up developing this script as such other developer might find it helpful.
 
-# Usage
+> A bash script to populate a fresh unix system with repeated commands and aliases.
 
-Run:
+## Usage
+
+Run the following command to up any unix-like system with useful aliases and commands:
 
 ```bash
 $ curl -s https://raw.githubusercontent.com/rousan/upfy/master/up.sh  | bash
 ```
+
+Note: Please find the scripts folder to know more about commands and aliases being added.
+
+## Contributing
+
+I welcome open source community to add more useful scripts and aliases to make it more powerful tool. You need to
+populate your scripts to the `scripts` folder and add the entry to `scripts/main.sh` file.
