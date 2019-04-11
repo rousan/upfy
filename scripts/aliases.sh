@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # CWD
-alias -='cd -'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
