@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 grey='\033[0;37m'
 green='\033[0;32m'
 nc='\033[0m'
@@ -22,7 +24,7 @@ download_scripts() {
   [[ -f $tmpfile ]] || mktemp "$tmpfile"
 
   # dowbload scripts zip
-  curl -o "$tmpfile" "$scripts_url"
+  curl -s -o "$tmpfile" "$scripts_url"
 
   # create scripts folder if not exists
   scripts_folder=$app_folder/scripts
@@ -38,11 +40,11 @@ download_scripts() {
 printf "\n"
 print_grey "  Downloading scripts: "
 print_green "$scripts_url"
-download_scripts >/dev/null 2>&1
+printf "\n"
+download_scripts >/dev/null
 
 [[ -f "$bashrc_file" ]] || touch "$bashrc_file"
 
-printf "\n"
 print_grey "  Appending commands to bashrc file: "
 print_green "$bashrc_file"
 main_script_file=$app_folder/scripts/main.sh
