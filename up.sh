@@ -59,7 +59,7 @@ printf "\n"
 print_green "  Done!"
 
 printf "\n\n"
-print_grey "  It is recommended to execute command below once:"
+print_grey "  It is recommended to execute following command once:"
 printf "\n"
 print_green "  $ source $bashrc_file"
 printf "\n\n"
