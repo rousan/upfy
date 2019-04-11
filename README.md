@@ -5,9 +5,7 @@
     <img src="https://raw.githubusercontent.com/rousan/upfy/master/logo.png" alt="Logo" title="Upfy" height="150">
   </a>
 </h1>
-<h3 align="center">
-Upfy
-</h3>
+<p align="center">Upfy</p>
 <br>
 
 # upfy
