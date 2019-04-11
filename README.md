@@ -22,6 +22,8 @@ Run the following command to up any unix-like system with useful aliases and com
 
 ```bash
 $ curl -s https://raw.githubusercontent.com/rousan/upfy/master/up.sh  | bash
+
+$ source ~/.bashrc
 ```
 
 Note: Please find the scripts folder to know more about commands and aliases being added.
