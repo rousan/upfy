@@ -19,9 +19,8 @@ print_green() {
 }
 
 download_scripts() {
-  # create tempfile if not exists
-  tmpfile=/tmp/upfy-scripts-download.zip
-  [[ -f $tmpfile ]] || mktemp "$tmpfile"
+  # create tempfile
+  tmpfile=$(mktemp /tmp/upfy-scripts-download.XXXXX)
 
   # dowbload scripts zip
   curl -s -o "$tmpfile" "$scripts_url"
