@@ -25,7 +25,16 @@ $ curl -s https://raw.githubusercontent.com/rousan/upfy/master/up.sh  | bash
 
 Note: Please find the scripts folder to know more about commands and aliases being added.
 
+## Build
+
+After adding scripts just run following command to zip all the scripts:
+
+```bash
+./build.sh
+```
+
 ## Contributing
 
 I welcome open source community to add more useful scripts and aliases to make it more powerful tool. You need to
-populate your scripts to the `scripts` folder and add the entry to `scripts/main.sh` file.
+populate your scripts to the `scripts` folder and add the entry to `scripts/main.sh` file and after adding just run
+`./build.sh` to make the `dist/scripts.zip` file which is our distributable file.
