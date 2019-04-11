@@ -52,6 +52,7 @@ then
   printf "\n" >> "$bashrc_file"
   printf "# added by Upfy\n" >> "$bashrc_file"
   printf "$execute_line" >> "$bashrc_file"
+  printf "\n" >> "$bashrc_file"
 fi
 
 printf "\n"
