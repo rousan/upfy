@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 app_folder=$(eval echo ~$USER)/.upfy
 base_dir=$app_folder/scripts
