@@ -38,12 +38,7 @@ download_scripts() {
 printf "\n"
 print_grey "  Downloading scripts: "
 print_green "$scripts_url"
-if [ "$1" = "-d" ]
-then
-  download_scripts
-else
-  download_scripts >/dev/null 2>&1
-fi
+download_scripts >/dev/null 2>&1
 
 [[ -f "$bashrc_file" ]] || touch "$bashrc_file"
 
@@ -51,8 +46,12 @@ printf "\n"
 print_grey "  Appending commands to bashrc file: "
 print_green "$bashrc_file"
 main_script_file=$app_folder/scripts/main.sh
-echo "\n# added by Upfy" >> "$bashrc_file"
-echo "[ -f $main_script_file ] && source $main_script_file" >> "$bashrc_file"
+execute_line=$(echo "[ -f $main_script_file ] && source $main_script_file")
+if ! grep -Fxq "$execute_line" "$bashrc_file"
+then
+  echo "\n# added by Upfy" >> "$bashrc_file"
+  echo "$execute_line" >> "$bashrc_file"
+fi
 
 printf "\n"
 print_green "  Done!"
