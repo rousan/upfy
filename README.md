@@ -11,10 +11,12 @@
 
 # Upfy
 
+A bash script to populate a fresh unix system with repeated commands and aliases.
+
+## Motivation
+
 Whenever I create a computing engine/container (e.g. Docker, AWS, GCP), I needed to copy some repeated commands
 or aliases to that fresh system. So, I ended up developing this script as such other developer might find it helpful.
-
-> A bash script to populate a fresh unix system with repeated commands and aliases
 
 ## Usage
 
